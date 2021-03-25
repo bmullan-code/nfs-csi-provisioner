@@ -74,7 +74,7 @@ and then exec'd a shell into the pod to verify we can access the volume, and rea
 
 ```
 kubectl exec --stdin --tty task1-pv-pod -- /bin/bash
-```
+
 root@task-pv-pod:/# cd /usr/share/nginx/html/
 
 root@task-pv-pod:/usr/share/nginx/html# ls
@@ -83,3 +83,4 @@ root@task-pv-pod:/usr/share/nginx/html# date > abc
 root@task-pv-pod:/usr/share/nginx/html# cat abc
 Thu Mar 25 15:25:20 UTC 2021
 root@task-pv-pod:/usr/share/nginx/html#
+```
